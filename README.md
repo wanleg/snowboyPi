@@ -17,6 +17,8 @@ pip install requests
 6) Download pre-packaged Snowboy binaries and their Python wrappers for Raspberry Pis:
 https://s3-us-west-2.amazonaws.com/snowboy/snowboy-releases/rpi-arm-raspbian-8.0-1.1.1.tar.bz2
 7) Extract to Pi & rename directory to "snowboy"
+8) Use "speaker-test -c 2" to test audio out
+9) Use "arecord -d 3 test.wav" to record a 3 second test clip. Use "aplay test.wav" to verify
 
 Prepare Snowboy
 1) copy training_service.py to the snowboy directory
