@@ -17,3 +17,8 @@ pip install requests
 6) Download pre-packaged Snowboy binaries and their Python wrappers for Raspberry Pis:
 https://s3-us-west-2.amazonaws.com/snowboy/snowboy-releases/rpi-arm-raspbian-8.0-1.1.1.tar.bz2
 7) extract to Pi & rename directory to "snowboy"
+
+Prepare Snowboy
+1) copy training_service.py to the snowboy directory
+2) log into https://snowboy.kitt.ai, click on “Profile settings”, and copy your API token
+3)
