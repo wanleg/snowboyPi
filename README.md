@@ -31,4 +31,10 @@ python demo.py ~/snowboy/resources/saved_model.pmdl
 
 Customize Snowboy
 1) copy snowboy.py to the snowboy directory
-2) copy thinger.io curl request to ~/thingeriocurl.sh
+2) copy thinger.io curl request to ~/thingeriocurl.sh and make it executable
+3) run snowboy.py to make sure everything is working:
+python snowboy.py
+
+Autostart Snowboy
+1) copy snowboy.service to /lib/systemd/system/
+
