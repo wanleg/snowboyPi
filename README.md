@@ -42,3 +42,5 @@ sudo systemctl daemon-reload
 3) start the snowboy.service to make sure everything is working:
 sudo systemctl start snowboy.service
 
+Adding
+1) Use training_service.py to train more voice models and add pmdl files to ~/snowboy/snowboy.py (comma separated)
