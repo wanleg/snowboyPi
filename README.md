@@ -10,20 +10,8 @@ python2:
 sudo pip install pyaudio
 python3:
 sudo pip3 install pyaudio
-4) Create ~/.asoundrc with correct hw settings. use aplay -l & arecord -l to find out hw cards.
-in this sample, playback is through onboard jack & input is through usb mic
-
-pcm.!default {
-  type asym
-   playback.pcm {
-     type plug
-     slave.pcm "hw:0,0"
-   }
-   capture.pcm {
-     type plug
-     slave.pcm "hw:1,0"
-   }
-}
+4) Create ~/.asoundrc with correct hw settings. use aplay -l & arecord -l to find out hw cards. "card 0, device 0" is "hw:0,0"
+In the attached sample, playback is through onboard jack & input is through usb mic
 5) If using RESTful API Calls  via python script (per snowboy instructions) need to install "requests" module for python:
 pip install requests
 6) Download pre-packaged Snowboy binaries and their Python wrappers for Raspberry Pis:
