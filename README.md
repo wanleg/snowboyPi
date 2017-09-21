@@ -1,4 +1,4 @@
-# snowboyPI
+# snowboyPi
 snowboy setup on raspberry pi
 Start with a fresh install of Raspbian (Lite or Regular, this guide assumes Lite)
 1) Update
