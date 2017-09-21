@@ -37,4 +37,8 @@ python snowboy.py
 
 Autostart Snowboy
 1) copy snowboy.service to /lib/systemd/system/
+2) you may need to run this:
+sudo systemctl daemon-reload 
+3) start the snowboy.service to make sure everything is working:
+sudo systemctl start snowboy.service
 
