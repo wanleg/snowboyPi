@@ -34,7 +34,7 @@ python demo.py ~/snowboy/resources/saved_model.pmdl
 
 Customize Snowboy
 1) copy snowboy.py to the snowboy directory
-2) copy thinger.io curl request to ~/thingeriocurl.sh and make it executable
+2) copy thinger.io curl request to ~/thingeriocurl.sh and make it executable. be sure to replace the "bearer" information with the static device token
 3) run snowboy.py to make sure everything is working:
 python snowboy.py
 
