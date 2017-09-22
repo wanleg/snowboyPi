@@ -29,7 +29,7 @@ signal.signal(signal.SIGINT, signal_handler)
 models = ['/home/pi/snowboy/resources/saved_model.pmdl']
 
 #original line from kitt.ai/snowboy:
-detector = snowboydecoder.HotwordDetector(model, sensitivity=0.5)
+#detector = snowboydecoder.HotwordDetector(model, sensitivity=0.5)
 #use this so you don't need to specify voice model when calling this script
 detector = snowboydecoder.HotwordDetector(models, sensitivity=0.5)
 
