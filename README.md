@@ -19,7 +19,7 @@ python3:
 ```python
 sudo pip3 install pyaudio
 ```
-4) Create **~/.asoundrc** with correct hw settings. use *aplay -l* & *arecord -l* to find out hw cards. "**card 0, device 0**" is "**hw:0,0**"
+4) Create **~/.asoundrc** with correct hw settings. use `aplay -l` & `arecord -l` to find out hw cards. "**card 0, device 0**" is "**hw:0,0**"
 In the attached sample, playback is through onboard jack & input is through usb mic
 5) If using RESTful API Calls via python script (per snowboy instructions) need to install "requests" module for python:
 ```
@@ -28,8 +28,8 @@ pip install requests
 6) Download pre-packaged Snowboy binaries and their Python wrappers for Raspberry Pis:
 https://s3-us-west-2.amazonaws.com/snowboy/snowboy-releases/rpi-arm-raspbian-8.0-1.1.1.tar.bz2
 7) Extract to Pi & rename directory to "**snowboy**"
-8) Use *speaker-test -c 2* to test audio out
-9) Use *arecord -d 3 test.wav* to record a 3 second test clip. Use *aplay test.wav* to verify
+8) Use `speaker-test -c 2` to test audio out
+9) Use `arecord -d 3 test.wav` to record a 3 second test clip. Use `aplay test.wav` to verify
 10) If you need to tweak some alsa settings, use *alsamixer* & then run the following to keep the settings
 ```bash
 sudo alsactl store
