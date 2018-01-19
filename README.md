@@ -52,19 +52,25 @@ python demo.py ~/snowboy/resources/saved_model.pmdl
 
 ## Customize Snowboy
 1) copy **snowboy.py** to the snowboy directory
-2) copy thinger.io curl request to ~/thingeriocurl.sh and make it executable. be sure to replace the "bearer" information with the static device token
-3) run snowboy.py to make sure everything is working:
+2) copy the curl requeset from thinger.io to **~/thingeriocurl.sh** and make it executable. be sure to replace the "bearer" information with the static device token
+3) run **snowboy.py** to make sure everything is working:
+```
 python snowboy.py
+```
 
 ## Autostart Snowboy
-1) copy snowboy.service to /lib/systemd/system/
+1) copy **snowboy.service** to **/lib/systemd/system/**
 2) you may need to run this:
+```
 sudo systemctl daemon-reload 
-3) start the snowboy.service to make sure everything is working:
+```
+3) start the **snowboy.service** to make sure everything is working:
+```
 sudo systemctl start snowboy.service
+```
 
 ## Adding
-1) Use training_service.py to train more voice models and add pmdl files to ~/snowboy/snowboy.py (comma separated)
+1) Use **training_service.py** to train more voice models and add pmdl files to **~/snowboy/snowboy.py** (comma separated)
 
 ## To Do
-1) incorporate ~/thingeriocurl.sh into ~/snowboy/snowboy.py
+1) incorporate **~/thingeriocurl.sh** into **~/snowboy/snowboy.py**
