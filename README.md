@@ -10,6 +10,7 @@ sudo apt update && sudo apt -y upgrade && sudo apt-get -y auto-remove && sudo re
 sudo apt -y install python-pyaudio python3-pyaudio sox python3-pip python-pip libatlas-base-dev
 ```
 3) Install PortAudio’s Python bindings:
+
 python2:
 ```python
 sudo pip install pyaudio
