@@ -2,7 +2,9 @@
 snowboy setup on raspberry pi
 Start with a fresh install of Raspbian (Lite or Regular, this guide assumes Lite)
 1) Update
+```bash
 sudo apt update && sudo apt -y upgrade && sudo apt-get -y auto-remove && sudo reboot
+```
 2) Install dependencies:
 sudo apt -y install python-pyaudio python3-pyaudio sox python3-pip python-pip libatlas-base-dev
 3) Install PortAudio’s Python bindings:
