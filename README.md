@@ -73,7 +73,7 @@ sudo systemctl start snowboy.service
 ```
 
 ## Adding
-1) Use **training_service.py** to train more voice models and add pmdl files to **~/snowboy/snowboy.py** (comma separated)
+Use **training_service.py** to train more voice models and add pmdl files to **~/snowboy/snowboy.py** (comma separated)
 
 ## To Do
-1) incorporate **~/thingeriocurl.sh** into **~/snowboy/snowboy.py**
+* incorporate **~/thingeriocurl.sh** into **~/snowboy/snowboy.py**
