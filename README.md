@@ -39,7 +39,10 @@ sudo alsactl store
 1) copy **training_service.py** to the snowboy directory
 2) log into https://snowboy.kitt.ai, click on “Profile settings”, and copy your API token
 3) change the appropriate fields (token, hotword, etc.) in **training_service.py**
-4) use *rec -r 16000 -c 1 -b 16 -e signed-integer FILENAME.wav* to record 3 wav files of your hotword to the same directory
+4) use the following to record 3 wav files of your hotword to the same directory
+```
+rec -r 16000 -c 1 -b 16 -e signed-integer FILENAME.wav
+```
 5) run the following to generate a pmdl
 ```
 python training_service.py 1.wav 2.wav 3.wav saved_model.pmdl
