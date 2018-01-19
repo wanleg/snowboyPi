@@ -30,7 +30,10 @@ https://s3-us-west-2.amazonaws.com/snowboy/snowboy-releases/rpi-arm-raspbian-8.0
 7) Extract to Pi & rename directory to "snowboy"
 8) Use "speaker-test -c 2" to test audio out
 9) Use "arecord -d 3 test.wav" to record a 3 second test clip. Use "aplay test.wav" to verify
-10) If you need to tweak some alsa settings, use alsamixer & then run "sudo alsactl store" to keep the settings
+10) If you need to tweak some alsa settings, use alsamixer & then run the following to keep the settings
+```bash
+sudo alsactl store
+```
 
 ## Prepare Snowboy
 1) copy training_service.py to the snowboy directory
