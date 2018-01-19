@@ -6,12 +6,18 @@ Start with a fresh install of Raspbian (Lite or Regular, this guide assumes Lite
 sudo apt update && sudo apt -y upgrade && sudo apt-get -y auto-remove && sudo reboot
 ```
 2) Install dependencies:
+```bash
 sudo apt -y install python-pyaudio python3-pyaudio sox python3-pip python-pip libatlas-base-dev
+```
 3) Install PortAudio’s Python bindings:
 python2:
+```python
 sudo pip install pyaudio
+```
 python3:
+```python
 sudo pip3 install pyaudio
+```
 4) Create ~/.asoundrc with correct hw settings. use aplay -l & arecord -l to find out hw cards. "card 0, device 0" is "hw:0,0"
 In the attached sample, playback is through onboard jack & input is through usb mic
 5) If using RESTful API Calls via python script (per snowboy instructions) need to install "requests" module for python:
