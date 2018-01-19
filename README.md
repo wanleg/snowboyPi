@@ -11,11 +11,11 @@ sudo apt -y install python-pyaudio python3-pyaudio sox python3-pip python-pip li
 ```
 3) Install PortAudio’s Python bindings:
 
-python2:
+**python2**:
 ```python
 sudo pip install pyaudio
 ```
-python3:
+**python3**:
 ```python
 sudo pip3 install pyaudio
 ```
