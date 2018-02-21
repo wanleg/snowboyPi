@@ -77,3 +77,4 @@ Use **training_service.py** to train more voice models and add pmdl files to **~
 
 ## To Do
 - [ ] incorporate **~/thingeriocurl.sh** into **~/snowboy/snowboy.py**
+- [ ] test edit
